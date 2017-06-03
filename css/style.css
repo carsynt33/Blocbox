@@ -111,28 +111,6 @@ background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
    position: relative;
  }
  header .hero h1 {
-   font-size:2em;
-   font-weight: normal;
-   margin:10px auto 0;
- }
- header .hero p {
-   font-size: 1em;
-   line-height: 1.25em;
-   font-weight: 100;
-   margin:10px auto 40px;
- }
- header .hero img {
-   display: block;
-   margin:3em auto 0;
- }
-
-@media (min-width: 992px) {
-  header .hero {
-   text-align: center;
-   display:block;
-   position: relative;
- }
- header .hero h1 {
    font-size:48px;
    font-weight: normal;
    margin:95px 0 0;
@@ -147,7 +125,26 @@ background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
    display: block;
    margin:3em auto 0;
   }
-}
+  @media (max-width: 767px) {
+   nav .one-half {
+     text-align: center;
+   }
+   .hero .btn {
+     display: none;
+   }
+   header nav ul {
+     float: none;
+   }
+   header .hero h1 {
+     font-size:2em;
+     margin:10px auto 0;
+   }
+   header .hero p {
+     font-size: 1em;
+     line-height: 1.25em;
+     margin:10px auto 0;
+   }
+ }
  /* BUTTONS */
  .btn {
    border-radius: 4px;
