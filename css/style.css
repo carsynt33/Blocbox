@@ -445,6 +445,11 @@ footer {
    text-align: center;
    margin-right:8px;
  }
+ /* ACTIVE STATE*/
+ .left-nav .items ul > li:active > a {
+   background: #FFFFFF;
+   color: #34495E;
+ }
 
 /* LEFT NAVBAR SETTINGS */
 .left-nav .settings {
