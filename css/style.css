@@ -125,24 +125,25 @@ background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
    display: block;
    margin:3em auto 0;
   }
+  /* RESPONSIVE */
   @media (max-width: 767px) {
    nav .one-half {
      text-align: center;
-   }
-   .hero .btn {
-     display: none;
    }
    header nav ul {
      float: none;
    }
    header .hero h1 {
      font-size:2em;
-     margin:10px auto 0;
+     margin:0 auto;
    }
    header .hero p {
      font-size: 1em;
      line-height: 1.25em;
      margin:10px auto;
+   }
+   .hero .btn {
+     display: none;
    }
    header .hero img {
      display: none;
@@ -446,9 +447,8 @@ footer {
    margin-right:8px;
  }
  /* ACTIVE STATE*/
- .left-nav .items ul > li:active > a {
-   background: #FFFFFF;
-   color: #34495E;
+ .left-nav .active {
+   background: #34495E;
  }
 
 /* LEFT NAVBAR SETTINGS */
