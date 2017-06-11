@@ -125,25 +125,37 @@ background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
    display: block;
    margin:3em auto 0;
   }
+  /* h4 disappears */
+  @media (min-width: 768px) {
+    header .hero h4 {
+      display: none;
+    }
+  }
   /* RESPONSIVE */
   @media (max-width: 767px) {
    nav .one-half {
      text-align: center;
    }
    header nav ul {
-     float: none;
+     display: none;
    }
    header .hero h1 {
      font-size:2em;
-     margin:0 auto;
+     margin:-1em auto 0;
    }
    header .hero p {
      font-size: 1em;
-     line-height: 1.25em;
-     margin:10px auto;
+     line-height: 1.75em;
+     margin: 1em auto 1.5em;
    }
    .hero .btn {
-     display: none;
+     float: none;
+   }
+   header .sign-in-mobile {
+     margin: 0 auto;
+     color: #2ECC71;
+     font-weight: normal;
+     padding: 20px 5px;
    }
    header .hero img {
      display: none;
