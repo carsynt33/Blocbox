@@ -556,6 +556,10 @@ footer {
   margin-top:8px;
 }
 
+.left-nav .menu-settings a {
+  margin-top: -5px;
+}
+
 /* CONTENT */
 .content {
   padding:6em 1% 1.5em;

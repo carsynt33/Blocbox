@@ -42,7 +42,18 @@
         <div class="settings">
           <img src="images/128.jpg">
           <p>Joey Kirk</p>
-          <a href="#"><i class="fa fa-cog"></i></a>
+          <!--SETTINGS DROP MENU-->
+          <!-- <a href="#"><i class="fa fa-cog"></i></a>-->
+          <ul class="menu-settings">
+            <li>
+              <a href="#"><i class="fa fa-cog"></i></a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
+                  <li><a href="#"><i class="fa fa-users"></i> Collaborators</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
     </nav>
     <main role="main">
@@ -128,6 +139,7 @@
     <script src="js/dropit.js"></script>
     <script type="text/javascript">
      $(".menu").dropit();
+     $(".menu-settings").dropit();
      $( "#menu" ).click(function() {
        $("#left-nav").toggleClass("open", 200);
      });
